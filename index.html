@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <title>Binary Calculator</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" src="js/converter.js"></script>
+  </head>
+  <body>
+    <div id="converter">
+      <h2>Type a phrase to be converted to binary via Ascii:</h2>
+      <p style="color:white;">Phrase must have no spaces, numbers or special characters</p>
+      <input  id="clearButton" type="button" value="Clear Page" onclick="clearPage()"/>
+      <h3>Your phrase</h3>
+      <textarea name="phrase" id="phrase" cols="50" rows="5" placeholder="Write your text here. . ." onkeyup="asciiConverter()"></textarea>
+      <h3>Your phrase in Binary</h3>
+      <div id="ascii" ></div>
+      <div id="addResult"></div>
+      <hr id="block"/>
+      <div id="dropDown">
+      <h2>Enter a number in Binary or Decimal and select the appropriate drop down to convert your number to Binary, Hexadecimal or Octal:</h2> 
+      <input type="text" name="number" id="number" placeholder="Input number here. . ." />
+      <select id="select">
+        <option value="val1" id="val1">Decimal to Binary</option>
+        <option value="val2" id="val2">Decimal to Hexadecimal</option>
+        <option value="val3" id="val3">Decimal to Octal</option>
+        <option value="val4" id="val4">Binary to Decimal</option>
+        <option value="val5" id="val5">Binary to Hexadecimal</option>
+        <option value="val6" id="val6">Binary to Octal</option>
+      </select>
+      <input id="convertButton" type="button" value="Convert!" onclick="numberConverter()"/>
+      <div id="convertedResult"></div>
+      </div>
+    </div>
+    <hr/>
+    <p>Copyright &copy; 2015 | Keenan Rood </p>
+    
+  </body>
+</html>

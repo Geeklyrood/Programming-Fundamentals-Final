@@ -1,0 +1,73 @@
+#converter {
+  border: 7px solid #999;
+  border-radius: 5px;
+  background-color: #AA3939;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+#convertedResult {
+  margin: 10px;
+}
+#binaryResult {
+  margin: 10px;
+}
+body {
+  background-color: black;
+  color: white;
+}
+textarea {
+  border-radius: 3px;
+}
+#phrase {
+  display: block;
+  margin: auto;
+}
+#ascii {
+  display: inline-block;
+  margin: 10px auto;
+}
+#asciiButton {
+  font-size: 15px;
+  margin: auto;
+  display: block;
+  border-radius: 5px;
+  width: 75px;
+  height: 30px;
+}
+#clearButton {
+  font-size: 12px;
+  margin: auto;
+  display: block;
+  border-radius: 5px;
+  width: 75px;
+  height: 30px;
+}
+#convertButton {
+  font-size: 15px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 5px;
+  width: 75px;
+  height: 30px;
+}
+p {
+  color: #999;
+  text-align: center;
+}
+#block {
+  border: none;
+  height: 7px;
+  background-color: #999;
+}
+#block2 {
+  border: none;
+  height: 7px;
+  background-color: #999;
+}
+#block3 {
+  border: none;
+  height: 7px;
+  background-color: #999;
+}
+

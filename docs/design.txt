@@ -1,0 +1,433 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\margl1440\margr1440\vieww13660\viewh13800\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 ## Keenan Rood Final Project for Programming Fundamentals\
+\
+# Problem statement\
+\
+You are told that a program is needed that can convert a phrase input by the user to binary and displays that on the screen. After which you are told that they would like you to add in a program on the bottom that converts Decimal (base 10) numbers to Binary (base 2), Hexadecimal (base 3) and Octal (base 8) AND converts a Binary input to  Decimal, Hexadecimal and Octal. This should also be displayed on the screen.  \
+\
+# Nouns and Verbs Program 1\
+\
+Nouns: binary\
+\
+Verbs: Input, converts, displays\
+\
+# Defining Diagram Program 1\
+\
+Inputs:\
+\
+userInput via text box entry and submit\
+\
+Processing:\
+\
+Take userInput and convert to ascii\
+\
+output = Your phrase in binary [binaryPhrase]\
+\
+Outputs:\
+\
+Display output\
+\
+# Pseudocode Program 1\
+```\
+textToBinaryConverter\
+\
+init output to \'91 \'91\
+\
+userInput = get phrase from form\
+\
+for loop each letter in userInput\
+\
+  convert to its binary equivalent  + \'91 \'91 \
+  \
+end loop\
+\
+display Your phrase in binary [binaryPhrase]\
+\
+END\
+```\
+# Test Plans Program 1\
+\
+Variables: userInput binaryPhrase\
+\
+\
+Input: \
+\
+Coding is fun\
+\
+Expected output:\
+\
+01000011 01101111 01100100 01101001 01101110 01100111 00100000 01101001 01110011 00100000 01100110 01110101 01101110\
+\
+Actual output:\
+\
+\pard\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 01000011 01101111 01100100 01101001 01101110 01100111 00100000 01101001 01110011 00100000 01100110 01110101 01101110 00100001 00100001 \
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\
+Input: \
+\
+1234567890\
+\
+Expected output:\
+\
+00110001 00110010 00110011 00110100 00110101 00110110 00110111 00111000 00111001 00110000\
+\
+Actual output:\
+\
+\pard\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 00110001 00110010 00110011 00110100 00110101 00110110 00110111 00111000 00111001 00110000 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+\
+Input: \
+\
+How are you doing today? I am doing great I hope this works!\
+\
+Expected output:\
+\
+01001000 01101111 01110111 00100000 01100001 01110010 01100101 00100000 01111001 01101111 01110101 00100000 01100100 01101111 01101001 01101110 01100111 00100000 01110100 01101111 01100100 01100001 01111001 00111111 00100000 01001001 00100000 01100001 01101101 00100000 01100100 01101111 01101001 01101110 01100111 00100000 01100111 01110010 01100101 01100001 01110100 00100000 01001001 00100000 01101000 01101111 01110000 01100101 00100000 01110100 01101000 01101001 01110011 00100000 01110111 01101111 01110010 01101011 01110011 00100001 00001101 00001010 00001101 00001010 00001101 00001010\
+\
+Actual output:\
+\
+\pard\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 01001000 01101111 01110111 00100000 01100001 01110010 01100101 00100000 01111001 01101111 01110101 00100000 01100100 01101111 01101001 01101110 01100111 00100000 01110100 01101111 01100100 01100001 01111001 00111111 00100000 01001001 00100000 01100001 01101101 00100000 01100100 01101111 01101001 01101110 01100111 00100000 01100111 01110010 01100101 01100001 01110100 00100000 01001001 00100000 01101000 01101111 01110000 01100101 00100000 01110100 01101000 01101001 01110011 00100000 01110111 01101111 01110010 01101011 01110011 00100001 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+\
+Input: \
+\
+                       (a bunch of spaces)\
+\
+Expected output:\
+\
+00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00001101 00001010 \
+\
+Actual output:\
+\
+\pard\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\
+Input: \
+\
+abcdefghijklmnopqrstuvwxyz\
+\
+Expected output:\
+\
+01100001 01100010 01100011 01100100 01100101 01100110 01100111 01101000 01101001 01101010 01101011 01101100 01101101 01101110 01101111 01110000 01110001 01110010 01110011 01110100 01110101 01110110 01110111 01111000 01111001 01111010 00001101 00001010 00001101 00001010 00001101 00001010\
+\
+Actual output:\
+\
+\pard\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 01100001 01100010 01100011 01100100 01100101 01100110 01100111 01101000 01101001 01101010 01101011 01101100 01101101 01101110 01101111 01110000 01110001 01110010 01110011 01110100 01110101 01110110 01110111 01111000 01111001 01111010 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+\
+Input: \
+\
+ABCDEFGHIJKLMNOPQRSTUVWXYZ\
+\
+Expected output:\
+\
+01000001 01000010 01000011 01000100 01000101 01000110 01000111 01001000 01001001 01001010 01001011 01001100 01001101 01001110 01001111 01010000 01010001 01010010 01010011 01010100 01010101 01010110 01010111 01011000 01011001 01011010 00001101 00001010 00001101 00001010 00001101 00001010\
+\
+Actual output:\
+\
+\pard\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 01000001 01000010 01000011 01000100 01000101 01000110 01000111 01001000 01001001 01001010 01001011 01001100 01001101 01001110 01001111 01010000 01010001 01010010 01010011 01010100 01010101 01010110 01010111 01011000 01011001 01011010 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+\
+Input: \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 @#$%^&*():;\'94\'92_=>.<,?/!\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+Expected output:\
+\
+01000000 00100011 00100100 00100101 01011110 00100110 00101010 00101000 00101001 00111010 00111011 11100010 10000000 10011101 11100010 10000000 10011001 01011111 00111101 00111110 00101110 00111100 00101100 00111111 00101111 00100001\
+\
+Actual output:\
+\
+\pard\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 01000000 00100011 00100100 00100101 01011110 00100110 00101010 00101000 00101001 00111010 00111011 00010000000011101 00010000000011001 01011111 00111101 00111110 00101110 00111100 00101100 00111111 00101111 00100001 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+\'97\
+\
+\
+# Nouns and Verbs Program 2\
+\
+Nouns: decimal(10), hexadecimal(16), octal(8), binary(2)\
+\
+Verbs: Input, converts, displays\
+\
+\
+# Defining Diagram Program 1\
+\
+Inputs:\
+\
+userInput\
+binary number\
+decimal number\
+dropdown selector\
+  Decimal to binary\
+  decimal to hex\
+  decimal to octa\
+  binary to decimal\
+  binary to hex\
+  binary to octal\
+\
+Processing:\
+\
+get value of text area\
+get value of dropdown\
+\
+calculate conversion according to dropdown\
+\
+output = the [decimal/binary/hex/octal] representation of [userInput] is [calculated amount]\
+\
+Outputs:\
+\
+display output\
+\
+\
+# Pseudocode Program 1\
+```\
+numberConverter\
+\
+init binary\
+init decimal\
+init hex \
+init octal\
+init output\
+init userInput\
+\
+if dropdown = decimal to binary\
+  if userInput is not a number \
+    alert Enter a integer!\
+  endif\
+  convert decimal number to binary number\
+  output = The binary representation of [userInput] is [binary]\
+  display output to div\
+endif\
+\
+if dropdown = decimal to hex\
+  if userInput is not a number \
+    alert Enter a integer!\
+  endif\
+  convert decimal number to hex number\
+  output = The hex representation of [userInput] is [hex]\
+  display output to div\
+endif\
+\
+if dropdown = decimal to octal\
+  if userInput is not a number \
+    alert Enter a integer!\
+  endif\
+  convert decimal number to octal number\
+  output = The octal representation of [userInput] is [octal]\
+  display output to div\
+endif\
+\
+if dropdown = binary to decimal\
+  if userInput is not a number \
+    alert Enter a integer!\
+    if userInput is not binary\
+      alert That is not binary!\
+    endif\
+  endif\
+  convert binary number to decimal number\
+  output = The decimal representation of [userInput] is [decimal]\
+  display output to div\
+endif\
+\
+if dropdown = binary to hex\
+  if userInput is not a number \
+    alert Enter a integer!\
+    if userInput is not binary\
+      alert That is not binary!\
+    endif\
+  endif\
+  convert hex number to decimal number\
+  output = The hex representation of [userInput] is [hex]\
+  display output to div\
+endif\
+\
+if dropdown = binary to octal\
+  if userInput is not a number \
+    alert Enter a integer!\
+    if userInput is not binary\
+      alert That is not binary!\
+    endif\
+  endif\
+  convert octal number to decimal number\
+  output = The octal representation of [userInput] is [octal]\
+  display output to div\
+endif\
+\
+END\
+```\
+\
+# Test Plans Program 1\
+\
+Variables: \
+\
+binary decimal hex octal userInput\
+\
+\
+Input: \
+\
+binary to decimal 100002\
+\
+Expected output: \
+\
+That is not a binary number!\
+\
+Actual output: \
+\
+That is not a binary number!\
+\
+\
+Input:\
+\
+binary to octal, 100010001\
+\
+Expected output: \
+\
+The octal representation of 100010001 is 421\
+\
+Actual output: \
+\
+The octal representation of 100010001 is 421\
+\
+\
+Input:\
+\
+decimal to hex abcd\
+\
+Expected output:\
+\
+abcd is not a number!\
+\
+Actual output: \
+\
+abcd is not a number!\
+\
+\
+Input:\
+\
+decimal to octal 99898492\
+\
+Expected output:\
+\
+The octal representation of 99898492 is 575052174\
+\
+Actual output: \
+\
+The octal representation of 99898492 is 57505217\
+\
+\
+Input:\
+\
+decimal to binary 5\
+\
+Expected output:\
+\
+The binary representation of 5 is 101\
+\
+Actual output:\
+ \
+The binary representation of 5 is 101\
+\
+\
+Input:\
+\
+binary to decimal 101\
+\
+Expected output:\
+\
+The decimal representation of 101 is 5\
+\
+Actual output: \
+\
+The decimal representation of 101 is 5\
+\
+\
+Input:\
+\
+binary to hex 1000000000001111\
+\
+Expected output:\
+\
+The hex representation of 1000000000001111 is 800F\
+\
+Actual output: \
+\
+The hex representation of 1000000000001111 is 800F\
+\
+\
+Input:\
+\
+decimal to octal 50005\
+\
+Expected output:\
+\
+The octal representation of 50005 is 141525\
+\
+Actual output: \
+\
+The octal representation of 50005 is 141525\
+\
+\
+Input:\
+\
+binary to hex 2222333ccc999\
+\
+Expected output:\
+\
+2222333ccc999 is not a valid number!\
+\
+That is not binary!- - - - - (should not show because the is it a number should stop the program first)\
+\
+Actual output: \
+\
+2222333ccc999 is not a valid number!\
+\
+\
+}
