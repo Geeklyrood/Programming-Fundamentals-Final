@@ -1,7 +1,9 @@
+//adds clear button at the top of page when pressed completely reloads page
 function clearPage() {
   window.location.reload();
 }
 
+//Converts text to binary
 function asciiConverter() {
   var code;
   var output = '';
@@ -9,6 +11,7 @@ function asciiConverter() {
     phrase = phrase.split('');
     for (var i =0; i < phrase.length; i++) {
       code = phrase[i].charCodeAt(0).toString(2);
+      //accounts for the possibility of missing up to 3 0s at the beginning of the binary code 
       if (code.length !== 8) {
         code = '0' + code;
         if (code.length !== 8) {
@@ -22,18 +25,19 @@ function asciiConverter() {
     } 
     document.getElementById('ascii').innerHTML = output; 
 }
-
+//checks to see if userInput is actually binary
 function isStringBinary() {
-  var x =  document.getElementById('number').value;  
-  x = x.split('');
-  for (var i = 0; i < x.length; i++) {
-    if (x[i] !== '1' && x[i] !== '0') {
-      x = x.join();
+  var userInput =  document.getElementById('number').value;  
+  userInput = userInput.split('');
+  for (var i = 0; i < userInput.length; i++) {
+    if (userInput[i] !== '1' && userInput[i] !== '0') {
+      userInput = userInput.join();
       alert('That is not a binary number!'); 
     }
   }
 }
 
+//converts numbers based on the drop down box
 function numberConverter() {
   var binary;
   var decimal;
